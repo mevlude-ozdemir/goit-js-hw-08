@@ -66,12 +66,6 @@ const images = [
   },
 ];
 
-// function createGalleryMarkup(images) {
-//   const [ preview, original, description ] = images.map(({ preview, original, description }) => {
-
-//   })
-// }
-
 const list = document.querySelector(".gallery");
 
 function createGalleryMarkup(images) {
@@ -118,8 +112,6 @@ resimler.forEach((img) => {
   img.style.display = "block";
   img.style.margin = "0 auto";
 });
-
-
 
 list.addEventListener("click", function (event) {
   event.preventDefault();
