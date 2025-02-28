@@ -113,5 +113,12 @@ console.log(list.style);
 
 
 list.addEventListener("click", function (event) {
-	console.log(event.target.dataset.source); // click olayının gerçekleştiği öğe
+  event.preventDefault();
+	const instance = basicLightbox.create(`
+    <img src="${event.target.dataset.source}" width="800" height="600">
+  `)
+  instance.show()
 });
+
+
+
