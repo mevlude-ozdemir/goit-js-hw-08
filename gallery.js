@@ -110,3 +110,8 @@ resimler.forEach((img) => {
 
 
 console.log(list.style); 
+
+
+list.addEventListener("click", function (event) {
+	console.log(event.target.dataset.source); // click olayının gerçekleştiği öğe
+});
